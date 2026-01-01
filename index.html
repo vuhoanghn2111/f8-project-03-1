@@ -1,13 +1,222 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="./asset/reset.css">
-    <link rel="stylesheet" href="./asset/style.css">
-</head>
-<body>
-    project 3.1
-</body>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+        <link rel="stylesheet" href="./asset/reset.css" />
+        <link rel="stylesheet" href="./asset/style.css" />
+        <!-- Embed fonts -->
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Public+Sans:ital,wght@0,100..900;1,100..900&display=swap"
+            rel="stylesheet"
+        />
+        <!-- Favicon -->
+        <link
+            rel="apple-touch-icon"
+            sizes="57x57"
+            href="./asset/img/favicon/apple-icon-57x57.png"
+        />
+        <link
+            rel="apple-touch-icon"
+            sizes="60x60"
+            href="./asset/img/favicon/apple-icon-60x60.png"
+        />
+        <link
+            rel="apple-touch-icon"
+            sizes="72x72"
+            href="./asset/img/favicon/apple-icon-72x72.png"
+        />
+        <link
+            rel="apple-touch-icon"
+            sizes="76x76"
+            href="./asset/img/favicon/apple-icon-76x76.png"
+        />
+        <link
+            rel="apple-touch-icon"
+            sizes="114x114"
+            href="./asset/img/favicon/apple-icon-114x114.png"
+        />
+        <link
+            rel="apple-touch-icon"
+            sizes="120x120"
+            href="./asset/img/favicon/apple-icon-120x120.png"
+        />
+        <link
+            rel="apple-touch-icon"
+            sizes="144x144"
+            href="./asset/img/favicon/apple-icon-144x144.png"
+        />
+        <link
+            rel="apple-touch-icon"
+            sizes="152x152"
+            href="./asset/img/favicon/apple-icon-152x152.png"
+        />
+        <link
+            rel="apple-touch-icon"
+            sizes="180x180"
+            href="./asset/img/favicon/apple-icon-180x180.png"
+        />
+        <link
+            rel="icon"
+            type="image/png"
+            sizes="192x192"
+            href="./asset/img/favicon/android-icon-192x192.png"
+        />
+        <link
+            rel="icon"
+            type="image/png"
+            sizes="32x32"
+            href="./asset/img/favicon/favicon-32x32.png"
+        />
+        <link
+            rel="icon"
+            type="image/png"
+            sizes="96x96"
+            href="./asset/img/favicon/favicon-96x96.png"
+        />
+        <link
+            rel="icon"
+            type="image/png"
+            sizes="16x16"
+            href="./asset/img/favicon/favicon-16x16.png"
+        />
+        <link rel="manifest" href="./asset/img/favicon/manifest.json" />
+        <meta name="msapplication-TileColor" content="#ffffff" />
+        <meta
+            name="msapplication-TileImage"
+            content="./asset/img/favicon/ms-icon-144x144.png"
+        />
+        <meta name="theme-color" content="#ffffff" />
+    </head>
+    <body style="height: 10000px">
+        <!-- Header -->
+        <header>
+            <!-- Top header -->
+            <div class="container">
+                <div class="header">
+                    <div class="logo">
+                        <a href="#">
+                            <img
+                                src="./asset/img/logo.svg"
+                                alt="logo"
+                                class="logo-icon"
+                            />
+                        </a>
+                    </div>
+                    <nav class="navbar">
+                        <ul>
+                            <li>
+                                <a
+                                    href="#!"
+                                    class="navbar__item navbar__item--active"
+                                    >Home</a
+                                >
+                            </li>
+                            <li>
+                                <a href="#!" class="navbar__item">About</a>
+                            </li>
+                            <li>
+                                <a href="#!" class="navbar__item">Blog</a>
+                            </li>
+                            <li>
+                                <a href="#!" class="navbar__item">Contact</a>
+                            </li>
+                        </ul>
+                        <div class="header__action">
+                            <a href="#!" class="btn">Sign Up</a>
+                        </div>
+                    </nav>
+                </div>
+                <!-- Hero -->
+                <section class="hero">
+                    <section class="hero__content">
+                        <h1 class="hero__title">
+                            We’re a creative design agency.
+                        </h1>
+                        <p class="hero__desc">
+                            A brilliant, modular agency template for startup’s
+                            build yours toady.
+                        </p>
+                        <div class="hero__action">
+                            <a href="#!" class="btn">Get in touch</a>
+                            <button class="hero__video">
+                                <div class="icon">
+                                    <svg
+                                        xmlns="http://www.w3.org/2000/svg"
+                                        width="29"
+                                        height="59"
+                                        viewBox="0 0 29 59"
+                                        fill="none"
+                                    >
+                                        <path
+                                            d="M28.5 58.9126C21.1311 58.9126 14.0487 55.9583 8.73883 50.6696C3.42898 45.381 0.304523 38.1691 0.02109 30.5473C-0.262343 22.9255 2.31728 15.4863 7.21865 9.79081C12.12 4.0953 18.9621 0.586208 26.3092 -0.000114731L26.6111 4.05294C20.2764 4.55847 14.3772 7.58401 10.1512 12.4947C5.92525 17.4054 3.7011 23.8194 3.94547 30.3909C4.18985 36.9624 6.88376 43.1805 11.4619 47.7404C16.0401 52.3003 22.1466 54.8475 28.5 54.8475V58.9126Z"
+                                            fill="#143C3C"
+                                        />
+                                    </svg>
+                                    <svg
+                                        xmlns="http://www.w3.org/2000/svg"
+                                        width="44"
+                                        height="43"
+                                        viewBox="0 0 44 43"
+                                        fill="none"
+                                    >
+                                        <ellipse
+                                            cx="22"
+                                            cy="21.5"
+                                            rx="22"
+                                            ry="21.5"
+                                            fill="#83A17D"
+                                        />
+                                        <path
+                                            d="M26.4898 20.2259C27.1511 20.62 27.1377 21.5821 26.4658 21.9577L20.4968 25.2945C19.8249 25.6702 18.9983 25.1775 19.009 24.4078L19.1037 17.5701C19.1144 16.8004 19.9543 16.3309 20.6156 16.725L26.4898 20.2259Z"
+                                            fill="#FEF6FB"
+                                        />
+                                    </svg>
+                                </div>
+                                <span class="text">Watch Video</span>
+                            </button>
+                        </div>
+                    </section>
+                    <figure class="hero__media">
+                        <div class="hero__image">
+                            <img
+                                src="./asset/img/hero1.png"
+                                alt="hero1"
+                                class="hero__img"
+                            />
+    
+                            <img
+                                src="./asset/img/hero2.png"
+                                alt="hero2"
+                                class="hero__img"
+                            />
+    
+                            <img
+                                src="./asset/img/hero3.png"
+                                alt="hero3"
+                                class="hero__img"
+                            />
+                        </div>
+                        <div class="hero__deco">
+                            <div class="hero__deco-1">
+                                <img src="./asset/img/hero/Vector 2639.svg" alt="line" class="hero__line">
+                                <img src="./asset/img/hero/extra avstract.svg" alt="snow" class="hero__snow">
+                            </div>
+                            <div class="hero__deco-2">
+                                <img src="./asset/img/hero/Vector 2640.svg" alt="line" class="hero__line">
+                                <img src="./asset/img/hero/extra avstract.svg" alt="snow" class="hero__snow">
+                            </div>
+                        </div>
+                    </figure>
+                </section>
+            </div>
+        </header>
+        <!-- Main -->
+        <main></main>
+        <!-- Footer -->
+        <footer></footer>
+    </body>
 </html>

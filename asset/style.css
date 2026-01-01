@@ -1,0 +1,218 @@
+/* Base CSS */
+* {
+    box-sizing: border-box;
+}
+html {
+    font-size: 62.5%;
+}
+body {
+    font-size: 1.6rem;
+    font-family: "Poppins", sans-serif;
+}
+:root {
+    --primary__color--black: #152427;
+    --primary__color--black-green: #143c3c;
+    --secondary__color--blue: #83a17d;
+    --text__color--black-gray: #575d5e;
+    --text__color--white: #fff;
+}
+/* Common */
+.container {
+    width: 1140px;
+    max-width: 100% - 48px;
+    margin: 0 auto;
+}
+a {
+    text-decoration: none;
+}
+.btn {
+    display: inline-block;
+    color: var(--text__color--white);
+    font-size: 1.8rem;
+    font-style: normal;
+    font-weight: 500;
+    text-align: center;
+    line-height: 57px;
+    min-width: 173px;
+    height: 57px;
+    border-radius: 40px;
+    border: 1.5px solid #143c3c;
+    background: var(--primary__color--black-green);
+}
+.btn:hover {
+    opacity: 0.8;
+}
+/* ======================Header====================== */
+header {
+    font-family: "Public Sans", sans-serif;
+}
+.header {
+    padding-top: 28px;
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+.header::after {
+    content: "";
+    display: inline-block;
+    width: 1140px;
+    height: 1px;
+    background: linear-gradient(
+        90deg,
+        #fff 0%,
+        #dddcdc 51.09%,
+        rgba(212, 212, 212, 0) 99.68%
+    );
+    position: absolute;
+    bottom: -13px;
+}
+.navbar ul {
+    display: flex;
+    column-gap: 38px;
+}
+.navbar {
+    display: flex;
+    margin-left: auto;
+    column-gap: 88px;
+    align-items: center;
+}
+.navbar__item,
+.hero__desc {
+    color: var(--text__color--black-gray);
+    font-size: 1.8rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 1.55556; /* 155.556% */
+    position: relative;
+}
+.navbar__item.navbar__item--active {
+    color: var(--primary__color--black);
+}
+.navbar__item:hover {
+    color: var(--primary__color--black);
+}
+.navbar__item.navbar__item--active::before {
+    content: "";
+    display: inline-block;
+    width: 16px;
+    height: 2px;
+    background: var(--primary__color--black-green);
+    position: absolute;
+    bottom: -30px;
+    left: 2px;
+}
+/* Hero */
+.hero {
+    margin-top: 74px;
+    display: flex;
+    align-items: center;
+}
+.hero__title {
+    width: 368px;
+    color: var(--primary__color--black);
+    font-size: 5rem;
+    font-style: normal;
+    font-weight: 800;
+    line-height: 1.2; /* 120% */
+}
+.hero__desc {
+    width: 341px;
+    margin-top: 20px;
+}
+.hero__action {
+    margin-top: 42px;
+    display: flex;
+    align-items: center;
+}
+.hero__video {
+    display: flex;
+    align-items: center;
+    border: none;
+    background: none;
+    padding: 0;
+    cursor: pointer;
+}
+.hero__video:hover svg:last-child ellipse {
+    fill: var(--primary__color--black-green);
+}
+.hero__video .icon {
+    margin-left: 36px;
+    display: flex;
+    align-items: center;
+}
+.hero__video .icon svg:first-child {
+    margin-right: -22px;
+}
+.hero__video .text {
+    color: var(--primary__color--black);
+    margin-left: 15px;
+    text-align: center;
+    font-family: "Poppins";
+    font-size: 1.8rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 1.66667; /* 166.667% */
+}
+/* Hero media */
+.hero__media {
+    display: flex;
+    margin-right: 20px;
+    margin-left: auto;
+    position: relative;
+}
+.hero__image {
+    display: flex;
+    gap: 20px;
+}
+.hero__image:not(:first-child) {
+    margin-left: 20px;
+}
+.hero__media::after {
+    display: block;
+    content: "";
+    position: absolute;
+    right: 150px;
+    bottom: 4px;
+    width: 340px;
+    height: 340px;
+    border-radius: 340px;
+    background: #4dbb9a;
+    filter: blur(137px);
+}
+.hero__img {
+    width: 202px;
+    height: 466px;
+    border-radius: 110px;
+    object-fit: cover;
+    transition: 0.3s ease;
+    z-index: 1;
+}
+.hero__img:hover {
+    transform: translateY(77px);
+}
+.hero__deco-1 {
+    position: absolute;
+    width: 545px;
+    height: 361.174px;
+    left: -172px;
+    z-index: 1;
+}
+.hero__deco-1 .hero__snow {
+    position: absolute;
+    top: 7.68px;
+    left: -41.69px;
+}
+.hero__deco-2 {
+    position: absolute;
+    z-index: 1;
+}
+.hero__deco-2 .hero__line {
+    width: 545px;
+    height: 364.105px;
+    transform: rotate(355.95deg);
+}
+.hero__deco-2 .hero__snow {
+    position: absolute;
+    bottom: 65px;
+    right: -45px;
+}
