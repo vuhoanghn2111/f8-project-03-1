@@ -159,6 +159,8 @@ header {
     margin-right: 20px;
     margin-left: auto;
     position: relative;
+    width: 646px;
+    height: 466px;
 }
 .hero__image {
     display: flex;
@@ -184,35 +186,26 @@ header {
     height: 466px;
     border-radius: 110px;
     object-fit: cover;
-    transition: 0.3s ease;
     z-index: 1;
 }
-.hero__img:hover {
+.hero__img:nth-child(2) {
     transform: translateY(77px);
 }
-.hero__deco-1 {
+.hero__snow-1 {
     position: absolute;
-    width: 545px;
-    height: 361.174px;
-    left: -172px;
+    left: -215px;
+    bottom: 407px;
     z-index: 1;
 }
-.hero__deco-1 .hero__snow {
+.hero__line-1 {
     position: absolute;
-    top: 7.68px;
-    left: -41.69px;
-}
-.hero__deco-2 {
-    position: absolute;
+    left: -175px;
+    bottom: 137px;
     z-index: 1;
 }
-.hero__deco-2 .hero__line {
-    width: 545px;
-    height: 364.105px;
-    transform: rotate(355.95deg);
-}
-.hero__deco-2 .hero__snow {
+.deco-2 {
     position: absolute;
-    bottom: 65px;
-    right: -45px;
+    top: 229px;
+    right: 34px;
+    z-index: 1;
 }
