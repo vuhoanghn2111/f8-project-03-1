@@ -13,6 +13,7 @@ body {
     --primary__color--black: #152427;
     --primary__color--black-green: #143c3c;
     --secondary__color--blue: #83a17d;
+    --secondary__color--light-green: #e2eddf;
     --text__color--black-gray: #575d5e;
     --text__color--white: #fff;
 }
@@ -208,4 +209,74 @@ header {
     top: 229px;
     right: 34px;
     z-index: 1;
+}
+/* ========================Logo======================= */
+.logo__section {
+    margin-top: 207.31px;
+}
+.logo__section .container {
+    height: 201px;
+    border-radius: 100.5px;
+    background: var(--secondary__color--light-green);
+    padding-left: 121px;
+    padding-right: 122px;
+    display: flex;
+    align-items: center;
+}
+.logo__section--google {
+    color: var(--primary__color--black-green);
+    font-family: "Poppins";
+    font-size: 3.1rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+.logo__section-group {
+    display: flex;
+    align-items: center;
+}
+.logo__section--slack {
+    margin-left: 47px;
+}
+.slack__text {
+    margin-left: 1px;
+    color: var(--primary__color--black-green);
+    font-family: "Poppins";
+    font-size: 3.2rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+.logo__section--discord {
+    margin-left: 51px;
+}
+.discord__text {
+    margin-left: 11px;
+    color: #163c35;
+    font-family: "Poppins";
+    font-size: 2.6rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+.logo__section--rio {
+    margin-left: 64px;
+    color: var(--primary__color--black-green);
+    font-family: "Sonsie One";
+    font-size: 2.3rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+.logo__section--hekoru {
+    margin-left: 63px;
+}
+.hekoru__text {
+    color: var(--primary__color--black-green);
+    font-family: "Poppins";
+    font-size: 1.9rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    letter-spacing: 1.995px;
 }
