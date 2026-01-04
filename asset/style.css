@@ -431,12 +431,12 @@ header {
     z-index: 1;
 }
 .about__deco--snow {
-    left: 10px;
-    top: -53px;
+    left: 37px;
+    top: -41px;
 }
 .about__deco--line {
-    top: -10px;
-    left: 49px;
+    top: 4px;
+    left: 77px;
 }
 /* Info */
 .about__info {
@@ -450,7 +450,7 @@ header {
     right: -9px;
 }
 .about__info--container {
-    margin: 9px 22px 13px 23px;
+    margin: 19px 22px 13px 23px;
 }
 .about__info--heading {
     color: var(--primary__color--black);
@@ -587,4 +587,3 @@ header {
     bottom: -20px;
     opacity: 0.6;
 }
-
