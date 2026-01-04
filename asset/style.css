@@ -367,13 +367,13 @@ header {
 }
 .service__card:hover .service__info {
     margin-left: 18px;
-    margin-bottom: 23px;
     border-radius: 20px;
     background: #fff;
     box-shadow: -6px 9px 64px -4px rgba(118, 118, 118, 0.25);
 }
 .service__info {
     margin-top: 24px;
+    margin-bottom: 23px;
 }
 .service__name {
     color: var(--primary__color--black);
@@ -391,4 +391,195 @@ header {
     font-style: normal;
     font-weight: 500;
     line-height: 1.71429; /* 171.429% */
+}
+/* =======================About========================= */
+/* About media */
+.about {
+    margin-top: 149px;
+}
+.about .container {
+    display: flex;
+    justify-content: space-between;
+}
+.about__media {
+    width: 591px;
+    height: 557px;
+    position: relative;
+}
+.about__img {
+    position: absolute;
+    object-fit: cover;
+    border-radius: 210px;
+    background: url(<path-to-image>) lightgray 50% / cover no-repeat;
+    box-shadow: 0 4px 234px 11px rgba(59, 137, 71, 0.25);
+}
+.about__img.img-1 {
+    width: 286px;
+    height: 480px;
+    left: 0;
+    bottom: 0;
+}
+.about__img.img-2 {
+    width: 286px;
+    height: 480px;
+    top: 0;
+    right: 0;
+}
+/* Deco */
+.about__deco {
+    position: absolute;
+    z-index: 1;
+}
+.about__deco--snow {
+    left: 10px;
+    top: -53px;
+}
+.about__deco--line {
+    top: -10px;
+    left: 49px;
+}
+/* Info */
+.about__info {
+    width: 143px;
+    height: 144px;
+    border-radius: 8px;
+    background: #fff;
+    box-shadow: 0 7px 54px 0 rgba(154, 154, 154, 0.25);
+    position: absolute;
+    top: 405px;
+    right: -9px;
+}
+.about__info--container {
+    margin: 9px 22px 13px 23px;
+}
+.about__info--heading {
+    color: var(--primary__color--black);
+    font-family: "Public Sans";
+    font-size: 1.4rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 1; /* 100% */
+}
+.about__info--desc {
+    margin-top: 6px;
+    color: var(--text__color--black-gray);
+    font-family: "Public Sans";
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.4; /* 140% */
+    opacity: 0.4;
+}
+.about__teams--heading,
+.about__info--loading,
+.about__info--percent {
+    display: block;
+    margin-top: 10px;
+    color: var(--primary__color--black);
+    font-family: "Public Sans";
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 1.4; /* 140% */
+}
+.about__info--percent::after {
+    margin-top: 3px;
+    content: "";
+    display: block;
+    width: 96px;
+    height: 2px;
+    border-radius: 10px;
+    background: linear-gradient(
+        to right,
+        #83a17d 0%,
+        #83a17d 40%,
+        #eaeaea 40%,
+        #eaeaea 100%
+    );
+}
+.about__info--loading {
+    margin-top: 3px;
+    text-align: right;
+}
+.about__circle {
+    width: 11px;
+    height: 11px;
+    border-radius: 11px;
+    background: #eaeaea;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.about__circle .circle {
+    width: 5px;
+    height: 5px;
+    border-radius: 5px;
+    background: var(--primary__color--black-green);
+}
+.about__teams {
+    margin-top: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.about__teams--heading {
+    margin-top: 0;
+}
+.about__teams--avt {
+    display: flex;
+}
+.about__avt--img {
+    width: 16px;
+    height: 16px;
+    border-radius: 16px;
+    border: 1px solid #fff;
+    background: url(<path-to-image>) lightgray 50% / cover no-repeat;
+    object-fit: cover;
+}
+.about__avt--img:not(:first-child) {
+    margin-left: -5px;
+}
+/* About content */
+.about__heading {
+    width: 483px;
+}
+.about__desc {
+    margin-top: 11px;
+    width: 478px;
+    color: var(--tex__color--light-gray);
+    font-size: 1.6rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 1.625; /* 162.5% */
+}
+.about__detail {
+    margin-top: 36px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+}
+.about__detail--percent {
+    color: var(--primary__color--black);
+    font-size: 4.2rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 1.2381; /* 123.81% */
+}
+.about__detail--desc {
+    width: 364px;
+    color: var(--tex__color--light-gray);
+    font-size: 1.4rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 1.71429; /* 171.429% */
+}
+.about__detail::after {
+    content: "";
+    display: inline-block;
+    width: 485px;
+    height: 1px;
+    background: #83a17d;
+    position: absolute;
+    bottom: -20px;
 }
