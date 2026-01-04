@@ -587,3 +587,109 @@ header {
     bottom: -20px;
     opacity: 0.6;
 }
+/* =======================Process======================= */
+.process {
+    margin-top: 79px;
+}
+/* .process .container {
+    position: relative;
+} */
+.process__heading {
+    margin-top: 20px;
+    width: 477px;
+}
+.process__heading::after {
+    bottom: 18px;
+    right: -9px;
+}
+.process__image {
+    width: 450px;
+    height: 444px;
+    object-fit: cover;
+    position: absolute;
+    bottom: 0;
+    right: 92px;
+}
+.process__list {
+    margin-top: 81px;
+}
+.process__item {
+    display: flex;
+    align-items: center;
+}
+.process__item.item-1 {
+    position: relative;
+}
+.process__number {
+    display: inline-block;
+    margin-left: 30px;
+    color: var(--primary__color--black-green);
+    font-size: 7.2rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 0.72222; /* 72.222% */
+}
+.process__name {
+    color: var(--primary__color--black);
+    font-size: 2.2rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 1; /* 100% */
+}
+.process__desc {
+    width: 572px;
+    margin-left: auto;
+    margin-right: 41px;
+    color: var(--tex__color--light-gray);
+    font-family: "Public Sans";
+    font-size: 1.8rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 1.55556; /* 155.556% */
+}
+.process__link {
+    display: block;
+    margin-top: 22px;
+    color: var(--text__color--black-gray);
+    font-size: 1.8rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 18px; /* 100% */
+    text-decoration: underline;
+}
+.item-1 .process__info {
+    margin-top: 22px;
+    margin-left: 64px;
+}
+.item-2 .process__name {
+    margin-left: 49px;
+}
+.item-3 .process__name {
+    margin-left: 47px;
+}
+.process__item.process__item--active {
+    height: 185px;
+    border-radius: 33px;
+    background: var(--secondary__color--light-green);
+}
+.process__list .item-2 {
+    height: 151px;
+    position: relative;
+}
+.process__list .item-3::after,
+.process__list .item-2::after {
+    content: "";
+    display: block;
+    width: 1131px;
+    height: 3px;
+    background: linear-gradient(
+        180deg,
+        #83a17d 4.17%,
+        rgba(131, 161, 125, 0) 36.46%
+    );
+    position: absolute;
+    bottom: 0;
+}
+.process__list .item-3 {
+    height: 166px;
+}
