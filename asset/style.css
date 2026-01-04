@@ -578,8 +578,9 @@ header {
     content: "";
     display: inline-block;
     width: 485px;
-    height: 1px;
+    height: 2px;
     background: #83a17d;
     position: absolute;
     bottom: -20px;
+    opacity: 0.6;
 }
