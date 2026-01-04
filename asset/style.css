@@ -16,6 +16,7 @@ body {
     --secondary__color--light-green: #e2eddf;
     --text__color--black-gray: #575d5e;
     --text__color--white: #fff;
+    --tex__color--light-gray: #7d8188;
 }
 /* Common */
 .container {
@@ -42,6 +43,44 @@ a {
 }
 .btn:hover {
     opacity: 0.8;
+}
+.section__heading {
+    color: var(--primary__color--black);
+    font-family: Poppins;
+    font-size: 4.2rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 1.2381; /* 123.81% */
+    position: relative;
+}
+.section__title {
+    margin-left: 46px;
+    color: var(--primary__color--black);
+    font-family: Poppins;
+    font-size: 1.6rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 1.625; /* 162.5% */
+    position: relative;
+}
+.section__title::before {
+    content: "";
+    display: inline-block;
+    width: 25px;
+    height: 1px;
+    background: var(--primary__color--black);
+    position: absolute;
+    top: 9px;
+    left: -46px;
+}
+.section__heading::after {
+    content: "";
+    display: inline-block;
+    width: 66px;
+    height: 2px;
+    background: var(--primary__color--black);
+    position: absolute;
+    bottom: 19px;
 }
 /* ======================Header====================== */
 header {
@@ -225,7 +264,6 @@ header {
 }
 .logo__section--google {
     color: var(--primary__color--black-green);
-    font-family: "Poppins";
     font-size: 3.1rem;
     font-style: normal;
     font-weight: 500;
@@ -241,7 +279,6 @@ header {
 .slack__text {
     margin-left: 1px;
     color: var(--primary__color--black-green);
-    font-family: "Poppins";
     font-size: 3.2rem;
     font-style: normal;
     font-weight: 600;
@@ -253,7 +290,6 @@ header {
 .discord__text {
     margin-left: 11px;
     color: #163c35;
-    font-family: "Poppins";
     font-size: 2.6rem;
     font-style: normal;
     font-weight: 400;
@@ -273,10 +309,86 @@ header {
 }
 .hekoru__text {
     color: var(--primary__color--black-green);
-    font-family: "Poppins";
     font-size: 1.9rem;
     font-style: normal;
     font-weight: 600;
     line-height: normal;
     letter-spacing: 1.995px;
+}
+/* =========================Service=========================== */
+/* service header */
+.service {
+    margin-top: 106px;
+}
+.service__row {
+    margin-top: 12px;
+    display: flex;
+    align-items: center;
+}
+.service__heading {
+    width: 520px;
+}
+.service__action {
+    margin-left: auto;
+    display: flex;
+    gap: 17px;
+}
+.service__action--circle {
+    margin-top: 41px;
+    margin-bottom: 9px;
+    width: 54px;
+    height: 54px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #e2eddf;
+    color: #152427;
+}
+.service__action--circle:hover {
+    background: #152427;
+    color: #fff;
+}
+.service__heading.section__heading::after {
+    left: 351px;
+}
+/* Service list */
+.service__list {
+    margin-top: 76px;
+    display: flex;
+    gap: 16px;
+}
+.service__img {
+    width: 370px;
+    height: 318px;
+    border-radius: 20px 20px 0 0;
+    background: url(<path-to-image>) lightgray 50% / cover no-repeat;
+    object-fit: cover;
+}
+.service__card:hover .service__info {
+    margin-left: 18px;
+    margin-bottom: 23px;
+    border-radius: 20px;
+    background: #fff;
+    box-shadow: -6px 9px 64px -4px rgba(118, 118, 118, 0.25);
+}
+.service__info {
+    margin-top: 24px;
+}
+.service__name {
+    color: var(--primary__color--black);
+    font-family: Poppins;
+    font-size: 2.2rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 1; /* 100% */
+}
+.service__desc {
+    width: 268px;
+    margin-top: 18px;
+    color: var(--tex__color--light-gray);
+    font-size: 1.4rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 1.71429; /* 171.429% */
 }
