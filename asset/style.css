@@ -543,6 +543,9 @@ header {
 .about__heading {
     width: 483px;
 }
+.about__heading::after {
+    display: none;
+}
 .about__desc {
     margin-top: 11px;
     width: 478px;
@@ -584,3 +587,4 @@ header {
     bottom: -20px;
     opacity: 0.6;
 }
+
