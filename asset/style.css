@@ -781,3 +781,99 @@ header {
     top: 214px;
     right: 51px;
 }
+/* ==================Service feature================= */
+.service-feature {
+    margin-top: 140px;
+}
+.service-feature__header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.service-feature__heading {
+    width: 520px;
+    text-align: center;
+}
+.service-feature__heading::after {
+    display: none;
+}
+.service-feature__desc {
+    margin-top: 20px;
+    width: 547px;
+    color: var(--tex__color--light-gray);
+    text-align: center;
+    font-size: 1.6rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 1.625; /* 162.5% */
+}
+.service-feature__list {
+    margin-top: 103px;
+    display: flex;
+    column-gap: 45px;
+}
+.service-feature__item {
+    width: 350px;
+    height: 362px;
+    border-radius: 160px;
+    border: 1.5px solid #cecece;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.2s ease-in;
+}
+.service-feature__card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.service-feature__blog {
+    margin-top: 80px;
+    margin-bottom: 74px;
+}
+.service-feature__doc {
+    margin-top: 60px;
+    margin-bottom: 103px;
+}
+.service-feature__name {
+    color: #152427;
+    font-size: 2rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 1; /* 100% */
+}
+.service-feature__customer {
+    margin-top: 43px;
+    margin-bottom: 121px;
+}
+.service-feature__name--blog {
+    margin-top: 26px;
+    margin-bottom: 9px;
+}
+.service-feature__name--doc {
+    margin-top: 23px;
+    margin-bottom: 12px;
+}
+.service-feature__name--customer {
+    margin-top: 19px;
+    margin-bottom: 12px;
+}
+.service-feature__item--desc {
+    color: var(--tex__color--light-gray);
+    text-align: center;
+    font-size: 1.4rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 1.71429; /* 171.429% */
+}
+.service-feature__blog .service-feature__item--desc {
+    width: 286px;
+}
+.service-feature__doc .service-feature__item--desc,
+.service-feature__customer .service-feature__item--desc {
+    width: 264px;
+}
+.service-feature__item:hover {
+    transform: translateY(-59px);
+    box-shadow: 0 36px 100px 0 rgba(111, 120, 111, 0.2);
+}
