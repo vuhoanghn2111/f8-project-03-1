@@ -14,6 +14,7 @@ body {
     --primary__color--black-green: #143c3c;
     --secondary__color--blue: #83a17d;
     --secondary__color--light-green: #e2eddf;
+    --secondary__color--gray: #6a8383;
     --text__color--black-gray: #575d5e;
     --text__color--white: #fff;
     --tex__color--light-gray: #7d8188;
@@ -692,4 +693,91 @@ header {
 }
 .process__list .item-3 {
     height: 166px;
+}
+/* ========================Feature====================== */
+.feature {
+    margin-top: 148px;
+    background: var(--primary__color--black-green);
+    position: relative;
+}
+.feature__header {
+    padding-top: 116px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.feature__heading {
+    width: 457px;
+    color: #e7f9f9;
+}
+.feature__heading::after {
+    right: 97px;
+    bottom: 20px;
+    background: #e7f9f9;
+}
+.feature__desc {
+    width: 590px;
+    color: var(--secondary__color--gray);
+    font-family: "Public Sans";
+    font-size: 1.8rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 1.55556; /* 155.556% */
+}
+.feature__action {
+    margin-top: 13px;
+    display: flex;
+    align-items: center;
+}
+.feature__action--title {
+    color: #fff;
+    font-family: "Public Sans";
+    font-size: 1.8rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 1.55556; /* 155.556% */
+}
+.feature__action--icon {
+    margin-left: 26px;
+}
+.feature__video {
+    margin-top: 65px;
+    padding-bottom: 63px;
+    position: relative;
+}
+.feature__video--img {
+    width: 1140px;
+    height: 544px;
+    border-radius: 22px;
+    background: url(<path-to-image>) lightgray 50% / cover no-repeat;
+    object-fit: cover;
+}
+.feature__video--button {
+    width: 118px;
+    height: 118px;
+    border-radius: 50%;
+    border: none;
+    outline: none;
+    padding: 0;
+    background: #000000b2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    bottom: calc((100% - 63px) / 2);
+    right: 50%;
+    transform: translateX(50%);
+    cursor: pointer;
+}
+.feature__deco {
+    position: absolute;
+    z-index: 1;
+}
+.feature__deco--line {
+    top: 120px;
+    right: 53px;
+}
+.feature__deco--snow {
+    top: 214px;
+    right: 51px;
 }
