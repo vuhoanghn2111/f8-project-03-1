@@ -693,6 +693,7 @@ header {
 }
 .process__list .item-3 {
     height: 166px;
+    position: relative;
 }
 /* ========================Feature====================== */
 .feature {
@@ -876,4 +877,108 @@ header {
 .service-feature__item:hover {
     transform: translateY(-59px);
     box-shadow: 0 36px 100px 0 rgba(111, 120, 111, 0.2);
+}
+/* ======================Blog==================== */
+.blog {
+    margin-top: 184px;
+}
+.blog__flex-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.blog__heading {
+    margin-top: 10px;
+    width: 520px;
+}
+.blog__heading::after {
+    left: 489px;
+}
+.blog__desc {
+    width: 409px;
+    color: var(--tex__color--light-gray);
+    font-size: 1.6rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 1.625; /* 162.5% */
+}
+.blog__list {
+    margin-top: 90px;
+    display: flex;
+    gap: 30px;
+}
+.blog__card {
+    transition: 0.25s ease-in;
+}
+.blog__card:hover {
+    box-shadow: 0 12px 74px 0 rgba(91, 91, 91, 0.25);
+    transform: translateY(-10px);
+}
+.blog__card:hover .blog__info {
+    transform: translateX(30px);
+}
+.blog__img {
+    width: 360px;
+    height: 317px;
+    border-radius: 40px 40px 0 0;
+    background: url(<path-to-image>) lightgray 50% / cover no-repeat;
+    object-fit: cover;
+}
+.blog__info {
+    margin-top: 26px;
+    position: relative;
+    transition: 0.25s ease-in;
+}
+.blog__info::after {
+    content: "";
+    display: inline-block;
+    width: 337px;
+    height: 1px;
+    background: #c4c4c4;
+    position: absolute;
+    top: 163px;
+    right: 23px;
+}
+.blog__info .blog-1,
+.blog__info .blog-3 {
+    width: 346px;
+}
+.blog__info .blog-2 {
+    width: 281px;
+}
+.blog__btn {
+    min-width: 107px;
+    height: 26px;
+    border-radius: 20px;
+    background: var(--secondary__color--light-green);
+    color: #000;
+    text-align: center;
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 26px;
+    border-color: transparent;
+}
+.blog__btn:hover {
+    background: var(--primary__color--black-green);
+    color: var(--secondary__color--light-green);
+}
+.blog__info--special {
+    width: 346px;
+    margin-top: 20px;
+    color: var(--primary__color--black-green);
+    font-size: 1.8rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 30px; /* 166.667% */
+}
+.blog__date {
+    color: var(--text__color--black-gray);
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 12px; /* 120% */
+    position: absolute;
+    right: 22px;
+    top: 180px;
 }
