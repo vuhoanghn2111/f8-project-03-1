@@ -920,10 +920,9 @@ header {
 }
 .blog__card:hover .blog__info--container {
     transform: translateX(30px);
-}
-.blog__info--container {
     transition: 0.25s ease-in;
 }
+
 .blog__img {
     width: 360px;
     height: 317px;
