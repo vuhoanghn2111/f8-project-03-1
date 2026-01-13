@@ -922,7 +922,6 @@ header {
     transform: translateX(30px);
     transition: 0.25s ease-in;
 }
-
 .blog__img {
     width: 360px;
     height: 317px;
