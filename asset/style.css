@@ -949,6 +949,9 @@ header {
     right: 23px;
 }
 .blog__info .blog-1 {
+    width: 346px;
+}
+.blog__card:hover .blog__info .blog-1 {
     width: 330px;
 }
 
